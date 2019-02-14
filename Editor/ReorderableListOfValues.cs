@@ -135,7 +135,7 @@ namespace UnityExtensions
                 var primaryArray = serializedProperty;
                 foreach (var array in serializedProperties)
                     if (array != primaryArray)
-                        array.MoveArrayElement(dragIndex, dropIndex);
+                        array.MoveArrayElement(dragIndex+2, dropIndex+2);
             }
             catch (Exception ex)
             {
